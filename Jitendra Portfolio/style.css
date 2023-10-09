@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nav-color: #cbf6ff;
+}
+
+body {
+    width: 100%;
+}
+
+.nav-shedow {
+    box-shadow: 0 5px 5px rgb(130, 125, 117);
+}
+
+.nav_active {
+    background-color: #ffff;
+}
+
+.nav {
+    box-shadow: 0 5px 5px #ced4da;
+}
+
+.a-font {
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.benner-image {
+    background-image: url('/banner-bg.jpg');
+    background-size: cover;
+    z-index: 122;
+    opacity: 1;
+}
+
+
+.hero_heading {
+    color: rgb(54, 148, 148);
+    font-size: 4.5rem;
+}
+
+.hero-content {
+    position: relative;
+    transition: 0.8s;
+}
+
+.hero-content::before {
+    position: absolute;
+    content: "  ";
+    width: 0%;
+    height: 3px;
+    background-color: rgb(93, 133, 133);
+    transition: 2s;
+}
+
+.hero-content:hover.hero-content::before {
+    width: 100%;
+    pointer-events: auto
+}
+
+
+.insta {
+    color: #d62976;
+}
+
+.linkden {
+    color: #0A66C2;
+}
+
+.face {
+    color: blue;
+}
+
+.img_footer {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+@media only screen and (min-width:0px) and (max-width:768px) {
+    .benner-image {
+        height: 350px !important;
+    }
+
+    .bg-img-res {
+        display: none;
+    }
+
+    .hero-mar {
+        margin-left: 45px;
+        display: block;
+    }
+
+    .footer-box {
+        display: block;
+    }
+
+}
+
+@media only screen and (min-width:0px) and (max-width:992px) {
+    .hero_heading {
+        font-size: 2rem !important;
+    }
+
+    .text-cent {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 18px !important;
+    }
+
+    #contect_footer {
+        display: none;
+    }
+
+    #side-img {
+        display: none ;
+    }
+}
+
+   
+.hero_monu {
+    position: relative !important;
+    width: 400px;
+    height: 450px;
+    object-fit: cover;
+}
+
+
+.hero_before::before {
+    position: absolute !important;
+    content: "";
+    top: 130px !important;
+    height: 530px;
+    border-radius: 25px 215px 25px 206px;
+    width: 500px;
+    /* background-color: palevioletred; */
+    background-color: #f1e8eb;
+}
